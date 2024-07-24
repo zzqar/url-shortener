@@ -22,9 +22,9 @@ env-required - не соберет приложение, если в конфи�
 */
 
 type HTTPServer struct {
-	Address      string        `yaml:"address" env:"ADDRESS" env-default:"localhost:8080"`
-	Timeout      time.Duration `yaml:"timeout" env:"TIMEOUT" env-default:"5s"`
-	IddleTimeout time.Duration `yaml:"idle_timeout" env:"IDLE_TIMEOUT" env-default:"60s"`
+	Address      string        `yaml:"address" env:"ADDRESS" env-default:"localhost:8080" json:"address"`
+	Timeout      time.Duration `yaml:"timeout" env:"TIMEOUT" env-default:"5s" json:"timeout"`
+	IddleTimeout time.Duration `yaml:"idle_timeout" env:"IDLE_TIMEOUT" env-default:"60s" json:"iddleTimeout"`
 }
 
 func MustLoadConfig() *Config {
