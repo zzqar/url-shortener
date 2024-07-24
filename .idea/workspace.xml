@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f309dd7b-5f86-4fdf-8e2e-a475e9d1a47a" name="Changes" comment=" init">
-      <change afterPath="$PROJECT_DIR$/db/migration/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/lib/logger/sl/sl.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/storage/storage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/local.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migration/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/migration/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +68,16 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "go.sdk"
+    "settings.editor.selected.configurable": "preferences.sourceCode.SQLite"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "sqlite"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "SQLite",
+      "MySQL",
+      "Redshift"
     ]
   }
 }]]></component>
