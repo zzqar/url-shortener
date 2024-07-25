@@ -16,14 +16,14 @@ const (
 )
 
 func main() {
-	//TODO Init config: cleanenv
+	// Init config: cleanenv
 	/*
 		Что в себе он содержит ? // настройки сервера...
 		Для чего ? // для чтения параметров настроек из файла
 	*/
 	cfg := config.MustLoadConfig()
 
-	//TODO Init logger: slog
+	// Init logger: slog
 	/*
 		логировать ошибки ? // да, ошибки и дебаг сообщения
 		Почему тут ? // после запуска конфига мы можем узнать какой нам нужен логгер что бы потом отлавливать все ошибки
@@ -33,22 +33,24 @@ func main() {
 	log.Info("Server started", slog.String("ENV:", cfg.Env))
 	log.Debug("Debug message activated")
 
+	// Init storage: sqlite
 	/*
-		TODO init storage: sqlite
-		что он делает ?
-		почему тут ?
+		Наверное странно поднимать бд прежде чем роутер, позже перенесу
 	*/
 	storage, err := sqlite.New(cfg.StoragePath)
 	if err != nil {
 		log.Error("Error initializing storage", sl.Err(err))
 		os.Exit(1)
 	}
-	fmt.Println(storage)
 
+	_, err = storage.SaveURL("https://example.com", "short")
+	url, err := storage.GetURL("short")
+	fmt.Println(url)
 	/*
-	   TODO init controller: handler
-	   что он делает?
-	   почему тут?
+		https://www.youtube.com/watch?v=rCJvW2xgnk0&t=1357s
+		   TODO init controller: handler
+		   что он делает?
+		   почему тут?
 	*/
 
 	/*
