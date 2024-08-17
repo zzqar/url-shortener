@@ -10,9 +10,10 @@ import (
 )
 
 type Config struct {
-	Env         string     `yaml:"env" env:"ENV" env-default:"prod"`
-	StoragePath string     `yaml:"storage_path" env:"STORAGE_PATH" env-required:"true"`
-	HTTPServer  HTTPServer `yaml:"http_server"`
+	Env          string       `yaml:"env" env:"ENV" env-default:"prod"`
+	StoragePath  string       `yaml:"storage_path" env:"STORAGE_PATH" env-required:"true"`
+	HTTPServer   HTTPServer   `yaml:"http_server"`
+	RandomString RandomString `yaml:"random_string"`
 }
 
 /*
@@ -25,6 +26,10 @@ type HTTPServer struct {
 	Address      string        `yaml:"address" env:"ADDRESS" env-default:"localhost:8080" json:"address"`
 	Timeout      time.Duration `yaml:"timeout" env:"TIMEOUT" env-default:"5s" json:"timeout"`
 	IddleTimeout time.Duration `yaml:"idle_timeout" env:"IDLE_TIMEOUT" env-default:"60s" json:"iddleTimeout"`
+}
+
+type RandomString struct {
+	Length int `yaml:"length" env:"LENGTH" env-default:"6"`
 }
 
 func MustLoadConfig() *Config {

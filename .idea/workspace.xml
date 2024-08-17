@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f309dd7b-5f86-4fdf-8e2e-a475e9d1a47a" name="Changes" comment=" init">
+      <change afterPath="$PROJECT_DIR$/internal/http-server/handlers/url/save/save.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/http-server/middleware/logger/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/http-server/response/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/lib/logger/handlers/slogpretty/slogpretty.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/lib/random/random.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/url-shortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/url-shortener.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/url-shortener/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/url-shortener/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/sqlite/sqlite.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/storage/storage.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/storage/storage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/storage.db" beforeDir="false" afterPath="$PROJECT_DIR$/storage/storage.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,5 +140,16 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/lib/logger/handlers/slogpretty/slogpretty.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
